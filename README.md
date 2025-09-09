@@ -1,6 +1,6 @@
 # JiniCache - 分布式缓存系统
 
-JiniCache是一个基于Java实现的分布式缓存系统，参考了GeeCache的设计理念，支持单机缓存和分布式缓存。该系统采用一致性哈希算法实现分布式节点的负载均衡，使用Protobuf进行高效的二进制通信，并实现了防止缓存击穿的机制。
+JiniCache是一个基于Java实现的分布式缓存系统，支持单机缓存和分布式缓存。该系统采用一致性哈希算法实现分布式节点的负载均衡，使用Protobuf进行高效的二进制通信，并实现了防止缓存击穿的机制。
 
 ## 功能特性
 
@@ -56,8 +56,7 @@ JiniCache/
 │   │   │       ├── hash/           # 一致性哈希实现
 │   │   │       │   └── ConsistentHash.java # 一致性哈希算法
 │   │   │       ├── node/           # 分布式节点实现
-│   │   │       │   ├── NodeManager.java    # 节点管理器
-│   │   │       │   └── NodeStatus.java     # 节点状态
+│   │   │       │   └── NodeManager.java    # 节点管理器
 │   │   │       └── proto/          # Protobuf相关
 │   │   │           └── message.proto       # 消息定义
 │   │   └── resources/
